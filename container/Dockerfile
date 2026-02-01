@@ -11,6 +11,17 @@ RUN apt-get update \
       systemd \
       systemd-sysv \
       passwd \
+      bash-completion \
+      less \
+      lsb-release \
+      iproute2 \
+      procps \
+      net-tools \
+      nmap \
+      lsof \
+      tree \
+      vim-common \
+      sysvinit-utils \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
