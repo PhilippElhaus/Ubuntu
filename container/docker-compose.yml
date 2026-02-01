@@ -1,0 +1,14 @@
+services:
+  ubuntu-base:
+    build:
+      context: .
+    container_name: ubuntu-base
+    hostname: ubuntu-base
+    privileged: true
+    tmpfs:
+      - /run
+      - /run/lock
+    ports:
+      - "2222:22"
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
